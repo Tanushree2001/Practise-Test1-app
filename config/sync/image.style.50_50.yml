@@ -1,0 +1,7 @@
+uuid: f1421418-8398-4f6a-87cf-a209337d90ee
+langcode: en
+status: true
+dependencies: {  }
+name: '50_50'
+label: '50 * 50'
+effects: {  }

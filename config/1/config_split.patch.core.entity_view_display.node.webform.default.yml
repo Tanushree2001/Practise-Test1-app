@@ -1,0 +1,17 @@
+adding:
+  dependencies:
+    config:
+      - field.field.node.webform.webform
+    module:
+      - webform
+  content:
+    webform:
+      type: webform_entity_reference_entity_view
+      label: hidden
+      settings:
+        source_entity: true
+        lazy: false
+      third_party_settings: {  }
+      weight: 4
+      region: content
+removing: {  }

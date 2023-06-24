@@ -1,0 +1,19 @@
+uuid: 82c882e1-4d4e-47cb-95ba-4a0bc1028cc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.webform
+id: node.webform.field_title
+field_name: field_title
+entity_type: node
+bundle: webform
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,36 @@
+uuid: 05d565cd-537d-4301-9a02-acb87bd50dcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_paragraph.field_image
+    - field.field.paragraph.custom_paragraph.field_image_link
+    - paragraphs.paragraphs_type.custom_paragraph
+  module:
+    - block_field
+    - link
+id: paragraph.custom_paragraph.default
+targetEntityType: paragraph
+bundle: custom_paragraph
+mode: default
+content:
+  field_image:
+    type: block_field_default
+    weight: 2
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+  field_image_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

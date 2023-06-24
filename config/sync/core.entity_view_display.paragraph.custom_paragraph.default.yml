@@ -1,0 +1,84 @@
+uuid: ddf7e898-69b6-442b-8b31-25f1e786bb82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_paragraph.field_image
+    - field.field.paragraph.custom_paragraph.field_image_link
+    - paragraphs.paragraphs_type.custom_paragraph
+  module:
+    - block_field
+    - layout_builder
+    - layout_discovery
+    - link
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f2ade5d1-e00d-45cd-bbd3-09583b98ea31:
+            uuid: f2ade5d1-e00d-45cd-bbd3-09583b98ea31
+            region: content
+            configuration:
+              id: 'field_block:paragraph:custom_paragraph:field_image_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          6fc2a72b-58e7-47da-80b1-2ca13cb81ca7:
+            uuid: 6fc2a72b-58e7-47da-80b1-2ca13cb81ca7
+            region: content
+            configuration:
+              id: 'field_block:paragraph:custom_paragraph:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: block_field
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.custom_paragraph.default
+targetEntityType: paragraph
+bundle: custom_paragraph
+mode: default
+content:
+  field_image:
+    type: block_field
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

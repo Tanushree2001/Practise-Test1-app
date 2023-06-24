@@ -1,0 +1,39 @@
+# Ignore core files and directories
+/web/core/
+/vendor/
+
+# Ignore contributed modules and themes
+/web/modules/contrib/
+/web/themes/contrib/
+
+# Ignore custom modules and themes
+/web/modules/custom/
+/web/themes/custom/
+
+# Ignore generated files and directories
+/web/sites/*/files/
+/web/sites/*/private/
+
+# Ignore configuration files
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+
+# Ignore temporary files and directories
+/web/sites/*/tmp/
+
+# Ignore logs
+/web/sites/*/logs/
+/web/sites/*/aggregator/
+/web/sites/*/files/styles/
+/web/sites/*/files/css/
+
+# Ignore Drush configuration
+/drush/sites/
+
+# Ignore development-specific files
+/web/sites/*/services.yml
+/web/sites/*/development.services.yml
+/web/sites/*/example.settings.local.php
+/web/sites/*/settings.local.php.example
+/.env
+/.env.*

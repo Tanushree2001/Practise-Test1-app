@@ -1,0 +1,24 @@
+uuid: 746325d7-f507-42a7-b3ec-95904fbc0b84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - paragraphs.paragraphs_type.custom_paragraph
+  module:
+    - block_field
+id: paragraph.custom_paragraph.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: custom_paragraph
+label: image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

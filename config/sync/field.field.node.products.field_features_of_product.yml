@@ -1,0 +1,21 @@
+uuid: 45d141bb-47e6-4315-a5f7-75461b1f39e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_features_of_product
+    - node.type.products
+  module:
+    - options
+id: node.products.field_features_of_product
+field_name: field_features_of_product
+entity_type: node
+bundle: products
+label: 'Features of Product'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

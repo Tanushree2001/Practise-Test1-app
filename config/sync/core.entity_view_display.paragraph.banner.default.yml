@@ -1,0 +1,92 @@
+uuid: 96271d1c-57ae-4ebd-850d-d735e51a4547
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.field_image_banner
+    - field.field.paragraph.banner.field_link
+    - paragraphs.paragraphs_type.banner
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          77cd79d7-37b4-4d6e-839d-89f57158bbbd:
+            uuid: 77cd79d7-37b4-4d6e-839d-89f57158bbbd
+            region: content
+            configuration:
+              id: 'field_block:paragraph:banner:field_image_banner'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          08bf9089-03a3-420f-a21a-626d77734d23:
+            uuid: 08bf9089-03a3-420f-a21a-626d77734d23
+            region: content
+            configuration:
+              id: 'field_block:paragraph:banner:field_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  field_image_banner:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

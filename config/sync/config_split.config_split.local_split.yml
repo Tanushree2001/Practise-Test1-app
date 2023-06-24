@@ -1,0 +1,19 @@
+uuid: e7b15672-227f-42e9-9ad6-22e3e1ad2a15
+langcode: en
+status: true
+dependencies: {  }
+id: local_split
+label: 'Local Split'
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/1
+module:
+  devel: 0
+  views_ui: 0
+  webform: 0
+theme: {  }
+complete_list:
+  - system.site
+partial_list: {  }

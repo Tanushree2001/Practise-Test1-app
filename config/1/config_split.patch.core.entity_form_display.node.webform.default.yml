@@ -1,0 +1,14 @@
+adding:
+  dependencies:
+    config:
+      - field.field.node.webform.webform
+    module:
+      - webform
+  content:
+    webform:
+      type: webform_entity_reference_select
+      weight: 0
+      region: content
+      settings: {  }
+      third_party_settings: {  }
+removing: {  }
